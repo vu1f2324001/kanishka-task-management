@@ -1,6 +1,7 @@
 const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
+const path = require('path');
 
 const authRoutes = require('./routes/auth.routes');
 const taskRoutes = require('./routes/task.routes');
@@ -10,9 +11,14 @@ const ApiResponse = require('./utils/api-response');
 
 const app = express();
 
-app.use(helmet());
+app.use(helmet({
+  contentSecurityPolicy: false // Allows inline scripts for dashboard demo
+}));
 app.use(cors({ origin: process.env.CORS_ORIGIN || '*' }));
 app.use(express.json());
+
+// Serve Static Frontend UI
+app.use(express.static(path.join(__dirname, '../public')));
 
 // Health Check
 app.get('/health', (req, res) => {
