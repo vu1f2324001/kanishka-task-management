@@ -33,6 +33,13 @@ The Kanishka Task Management System is a backend application built to manage tas
 - API testing with Postman
 
 *Features listed above should match the actual implementation.*
+## 📸 Application Screenshots
+
+### Authentication Portal
+![Authentication Portal](docs/screenshots/auth-portal.png)
+
+### Task Management Dashboard
+![Task Management Dashboard](docs/screenshots/dashboard.png)
 
 ## 🛠️ Technology Stack
 
