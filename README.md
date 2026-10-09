@@ -31,7 +31,16 @@ The Kanishka Task Management System is a backend application built to manage tas
 - Task status management
 - Database migrations and seeders
 - API testing with Postman
+## 🔑 Demo Login Credentials
 
+Use the following demo accounts to test the application.
+
+| Role | Email | Password | Permissions |
+|---|---|---|---|
+| Administrator | admin@example.com | `AdminPass123!` | System-wide visibility and status transitions |
+| Regular User | user@example.com | `UserPass123!` | Task access based on assigned user permissions |
+
+**Note:** These credentials should only be used for local testing or a demo environment. Confirm that both accounts exist in the configured database before using them. Do not use these passwords in production.
 *Features listed above should match the actual implementation.*
 ## 📸 Application Screenshots
 
