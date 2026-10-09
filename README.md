@@ -61,20 +61,32 @@ Use the following demo accounts to test the application.
 | JWT | Authentication |
 | bcrypt | Password hashing |
 | Postman | API testing |
+---
 
-## 📁 Project Structure
-
+## 🏛️ Project Directory Structure
 ```text
 kanishka-task-management/
-├── migrations/
-├── seeds/
-├── postman/
-├── public/
 ├── src/
+│   ├── app.js               # Express application initialization & routes mounting
+│   ├── server.js            # Database health check & server bootstrap
+│   ├── config/              # Knex MySQL connection pooling
+│   ├── controllers/         # HTTP request/response handlers
+│   ├── services/            # Pure business logic and database queries
+│   ├── routes/              # Express API route declarations
+│   ├── middleware/          # JWT auth, RBAC admin guards, error sanitization
+│   ├── validators/          # Zod request validation schemas
+│   └── utils/               # Standardized JSON response & JWT utilities
+├── migrations/              # Relational Knex migrations for users and tasks
+├── seeds/                   # Repeatable seed data (Admin and Regular user)
 ├── tests/
-├── .env.example
-├── package.json
-└── README.md
+│   └── api.test.js          # Complete 13-test integration suite
+├── postman/
+│   └── task-management.postman_collection.json # Automated Postman collection
+├── public/
+│   └── index.html           # Live evaluation dashboard UI
+├── docs/screenshots/       # Application portal captures
+├── .env.example             # Clean environment template
+└── package.json
 ```
 
 ## ⚙️ Installation and Setup
