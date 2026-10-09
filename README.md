@@ -39,7 +39,7 @@ The Kanishka Task Management System is a backend application built to manage tas
 ![Authentication Portal](Screenshot_2026-10-09-15-31-26-63_40deb401b9ffe8e1df2f1cc5ba480b12.jpg)
 
 ### Task Management Dashboard
-![Task Management Dashboard](docs/screenshots/dashboard.png)
+![Task Management Dashboard](Screenshot_2026-10-09-15-33-57-75_40deb401b9ffe8e1df2f1cc5ba480b12.jpg)
 
 ## 🛠️ Technology Stack
 
